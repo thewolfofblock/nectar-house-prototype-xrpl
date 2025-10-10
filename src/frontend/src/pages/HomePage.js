@@ -32,30 +32,30 @@ const HomePage = () => {
   const featuredArtifacts = [
     {
       id: 'art_001',
-      title: 'Jaina-Style Maya Figurine',
+      title: 'Jaina-Style Maya Figurine - Noble Warrior',
       culture: 'Maya',
       period: 'Classic Period',
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400',
-      value: '$45,000',
+      value: '$92,000',
       tokenized: true,
-    },
-    {
-      id: 'art_002',
-      title: 'Aztec Obsidian Mirror',
-      culture: 'Aztec',
-      period: 'Post-Classic',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400',
-      value: '$32,000',
-      tokenized: false,
     },
     {
       id: 'art_003',
-      title: 'Olmec Jade Mask',
+      title: 'Olmec Jade Mask - Were-Jaguar',
       culture: 'Olmec',
       period: 'Formative',
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400',
-      value: '$125,000',
+      value: '$195,000',
       tokenized: true,
+    },
+    {
+      id: 'art_008',
+      title: 'Aztec Gold Pendant - Eagle Warrior',
+      culture: 'Aztec',
+      period: 'Post-Classic',
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400',
+      value: '$135,000',
+      tokenized: false,
     },
   ];
 
