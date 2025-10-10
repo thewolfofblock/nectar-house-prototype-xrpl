@@ -1,0 +1,21 @@
+ectar House System Design
+
+High-Level Flow:
+User -> Frontend (React) -> Backend API (Node.js) -> XRPL Mainnet
+                                    |
+                                   v
+                               IPFS (Provenance Storage)
+
+ASCII Diagram:
++------------+     +-------------+     +-----------+     +----------+
+| User/Wallet | --> | Frontend UI | --> | Backend   | --> | XRPL     |
++------------+     +-------------+     | API       |     | Mainnet  |
+                                       +-----------+     +----------+
+                                             |
+                                            v
+                                         IPFS (Metadata)
+
+Integration Points:
+- XLS-20: NFT Tokenization
+- AMMs: Liquidity/Staking
+- Hooks: Conditional Escrows
