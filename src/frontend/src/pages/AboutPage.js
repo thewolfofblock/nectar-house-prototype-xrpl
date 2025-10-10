@@ -78,10 +78,10 @@ const AboutPage = () => {
   ];
 
   const stats = [
-    { label: 'Artifacts Tokenized', value: '8+', icon: <ArtTrack /> },
-    { label: 'Total Value', value: '$850K+', icon: <TrendingUp /> },
+    { label: 'Artifacts Tokenized', value: '3+', icon: <ArtTrack /> },
+    { label: 'Total Value', value: '$300K+', icon: <TrendingUp /> },
     { label: 'Active Users', value: '1,200+', icon: <Verified /> },
-    { label: 'Restoration Projects', value: '18+', icon: <Eco /> },
+    { label: 'Restoration Projects', value: '12+', icon: <Eco /> },
   ];
 
   return (

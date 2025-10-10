@@ -157,78 +157,49 @@ router.get('/portfolio/:walletAddress', (req, res) => {
   // Mock portfolio data
   const portfolio = {
     walletAddress,
-    totalValue: 185000,
-    totalInvested: 150000,
-    totalGains: 35000,
-    stakingRewards: 5200,
-    restorationContributions: 2800,
+    totalValue: 200000,
+    totalInvested: 180000,
+    totalGains: 20000,
+    stakingRewards: 3500,
+    restorationContributions: 2500,
     holdings: [
       {
         artifactId: 'art_001',
-        artifactTitle: 'Jaina-Style Maya Figurine - Noble Warrior',
-        shares: 150,
-        totalShares: 1000,
-        ownershipPercentage: 15,
-        currentValue: 13800,
-        purchasePrice: 12000,
-        gain: 1800,
-        gainPercentage: 15.0
-      },
-      {
-        artifactId: 'art_003',
-        artifactTitle: 'Olmec Jade Mask - Were-Jaguar',
-        shares: 80,
-        totalShares: 1000,
-        ownershipPercentage: 8,
-        currentValue: 15600,
-        purchasePrice: 14000,
-        gain: 1600,
-        gainPercentage: 11.4
-      },
-      {
-        artifactId: 'art_005',
-        artifactTitle: 'Mixtec Codex-Style Vase',
+        artifactTitle: 'Sepik River Spirit Mask, Papua New Guinea',
         shares: 200,
         totalShares: 1000,
         ownershipPercentage: 20,
-        currentValue: 7600,
-        purchasePrice: 7000,
-        gain: 600,
-        gainPercentage: 8.6
+        currentValue: 20000,
+        purchasePrice: 18000,
+        gain: 2000,
+        gainPercentage: 11.1
       },
       {
-        artifactId: 'art_007',
-        artifactTitle: 'Maya Stela Fragment - Royal Portrait',
-        shares: 100,
+        artifactId: 'art_003',
+        artifactTitle: 'Yoruba Ibeji Twin Figures, Nigeria',
+        shares: 150,
         totalShares: 1000,
-        ownershipPercentage: 10,
-        currentValue: 10500,
-        purchasePrice: 9500,
+        ownershipPercentage: 15,
+        currentValue: 15000,
+        purchasePrice: 14000,
         gain: 1000,
-        gainPercentage: 10.5
+        gainPercentage: 7.1
       }
     ],
     stakingPositions: [
       {
         tokenId: 'FRAC_art_001',
-        stakedAmount: 15000,
+        stakedAmount: 20000,
         apy: 8.5,
         maturityDate: new Date('2024-06-15'),
-        expectedRewards: 637
+        expectedRewards: 850
       },
       {
         tokenId: 'FRAC_art_003',
-        stakedAmount: 20000,
+        stakedAmount: 15000,
         apy: 9.2,
         maturityDate: new Date('2024-07-20'),
-        expectedRewards: 920
-      },
-      {
-        tokenId: 'FRAC_art_005',
-        stakedAmount: 8000,
-        apy: 7.8,
-        maturityDate: new Date('2024-05-10'),
-        expectedRewards: 312
+        expectedRewards: 690
       }
     ],
     transactionHistory: [
@@ -236,8 +207,8 @@ router.get('/portfolio/:walletAddress', (req, res) => {
         id: 'tx_001',
         type: 'purchase',
         artifactId: 'art_001',
-        amount: 12000,
-        shares: 150,
+        amount: 18000,
+        shares: 200,
         timestamp: new Date('2024-01-15'),
         status: 'completed'
       },
@@ -246,42 +217,24 @@ router.get('/portfolio/:walletAddress', (req, res) => {
         type: 'purchase',
         artifactId: 'art_003',
         amount: 14000,
-        shares: 80,
+        shares: 150,
         timestamp: new Date('2024-01-18'),
         status: 'completed'
       },
       {
         id: 'tx_003',
-        type: 'purchase',
-        artifactId: 'art_005',
-        amount: 7000,
-        shares: 200,
-        timestamp: new Date('2024-01-22'),
-        status: 'completed'
-      },
-      {
-        id: 'tx_004',
-        type: 'purchase',
-        artifactId: 'art_007',
-        amount: 9500,
-        shares: 100,
-        timestamp: new Date('2024-01-25'),
-        status: 'completed'
-      },
-      {
-        id: 'tx_005',
         type: 'stake',
         tokenId: 'FRAC_art_001',
-        amount: 15000,
+        amount: 20000,
         duration: 180,
         timestamp: new Date('2024-01-20'),
         status: 'active'
       },
       {
-        id: 'tx_006',
+        id: 'tx_004',
         type: 'stake',
         tokenId: 'FRAC_art_003',
-        amount: 20000,
+        amount: 15000,
         duration: 200,
         timestamp: new Date('2024-01-28'),
         status: 'active'
@@ -382,39 +335,39 @@ router.post('/kyc', (req, res) => {
 // GET /api/users/restoration-fund - Get restoration fund information
 router.get('/restoration-fund', (req, res) => {
   const restorationFund = {
-    totalContributions: 45000,
-    totalArtifactsRestored: 18,
+    totalContributions: 30000,
+    totalArtifactsRestored: 12,
     currentProjects: [
       {
         id: 'restore_001',
         artifactId: 'art_001',
-        title: 'Jaina Figurine Conservation',
-        description: 'Professional conservation of ceramic surface and structural stabilization of Maya noble warrior figurine',
-        targetAmount: 8500,
-        currentAmount: 6200,
-        contributors: 67,
+        title: 'Sepik River Spirit Mask Conservation',
+        description: 'Professional conservation of tropical hardwood surface and stabilization of mineral-based pigment residues',
+        targetAmount: 8000,
+        currentAmount: 5500,
+        contributors: 45,
         status: 'active',
         deadline: new Date('2024-03-15')
       },
       {
         id: 'restore_002',
         artifactId: 'art_002',
-        title: 'Aztec Obsidian Mirror Restoration',
-        description: 'Expert restoration of obsidian surface and cedar wood frame reconstruction for Tezcatlipoca mirror',
-        targetAmount: 12000,
-        currentAmount: 8900,
-        contributors: 52,
+        title: 'Zapotec Effigy Vessel Restoration',
+        description: 'Expert restoration of terracotta surface and white slip decoration stabilization',
+        targetAmount: 10000,
+        currentAmount: 7200,
+        contributors: 38,
         status: 'active',
         deadline: new Date('2024-04-01')
       },
       {
         id: 'restore_003',
-        artifactId: 'art_006',
-        title: 'Teotihuacan Stone Mask Conservation',
-        description: 'Specialized stone conservation and surface treatment for volcanic stone mask',
-        targetAmount: 15000,
-        currentAmount: 11200,
-        contributors: 89,
+        artifactId: 'art_003',
+        title: 'Yoruba Ibeji Twin Figures Conservation',
+        description: 'Specialized wood conservation and indigo pigment stabilization for twin figures',
+        targetAmount: 12000,
+        currentAmount: 8900,
+        contributors: 52,
         status: 'active',
         deadline: new Date('2024-05-20')
       }
@@ -422,19 +375,19 @@ router.get('/restoration-fund', (req, res) => {
     completedProjects: [
       {
         id: 'restore_004',
-        title: 'Maya Stela Fragment Stabilization',
-        description: 'Complete stabilization and conservation of limestone stela fragment',
-        amount: 8500,
+        title: 'Sepik River Mask Surface Treatment',
+        description: 'Complete surface cleaning and patina preservation treatment',
+        amount: 4500,
         completedAt: new Date('2024-01-10'),
-        contributors: 45
+        contributors: 32
       },
       {
         id: 'restore_005',
-        title: 'Mixtec Vase Surface Treatment',
-        description: 'Professional cleaning and surface treatment of polychrome ceramic vase',
-        amount: 3200,
+        title: 'Yoruba Ibeji Bead Restoration',
+        description: 'Professional restoration of beaded accessories and metal ring stabilization',
+        amount: 2800,
         completedAt: new Date('2024-01-25'),
-        contributors: 28
+        contributors: 24
       }
     ]
   };

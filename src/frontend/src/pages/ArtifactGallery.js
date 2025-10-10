@@ -136,10 +136,9 @@ const ArtifactGallery = () => {
                 label="Culture"
               >
                 <MenuItem value="">All</MenuItem>
-                <MenuItem value="Maya">Maya</MenuItem>
-                <MenuItem value="Aztec">Aztec</MenuItem>
-                <MenuItem value="Olmec">Olmec</MenuItem>
+                <MenuItem value="Sepik River">Sepik River</MenuItem>
                 <MenuItem value="Zapotec">Zapotec</MenuItem>
+                <MenuItem value="Yoruba">Yoruba</MenuItem>
               </Select>
             </FormControl>
           </Grid>
@@ -152,9 +151,8 @@ const ArtifactGallery = () => {
                 label="Period"
               >
                 <MenuItem value="">All</MenuItem>
-                <MenuItem value="Formative">Formative</MenuItem>
-                <MenuItem value="Classic">Classic</MenuItem>
-                <MenuItem value="Post-Classic">Post-Classic</MenuItem>
+                <MenuItem value="Mid-20th Century">Mid-20th Century</MenuItem>
+                <MenuItem value="Monte Albán II–IIIA">Monte Albán II–IIIA</MenuItem>
               </Select>
             </FormControl>
           </Grid>
