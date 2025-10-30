@@ -1,4 +1,4 @@
-ectar House System Design
+Nectar House System Design
 
 High-Level Flow:
 User -> Frontend (React) -> Backend API (Node.js) -> XRPL Mainnet
