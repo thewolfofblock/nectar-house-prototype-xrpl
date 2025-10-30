@@ -1,0 +1,22 @@
+{
+  "name": "nectar-house-mvp",
+  "version": "1.0.0",
+  "description": "Nectar House - Cultural Heritage RWA Tokenization Marketplace",
+  "main": "src/backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\"",
+    "frontend:dev": "cd src/frontend && npm start",
+    "backend:dev": "cd src/backend && npm run dev",
+    "build": "cd src/frontend && npm run build",
+    "start": "cd src/backend && npm start",
+    "test": "jest",
+    "install:all": "npm install && cd src/frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": ["blockchain", "nft", "rwa", "cultural-heritage", "xrpl", "marketplace"],
+  "author": "Nectar House Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0"
+  }
+}
